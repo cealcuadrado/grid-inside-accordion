@@ -11,9 +11,23 @@ export class LayoutComponent implements OnInit {
   public panelStateTwo = false;
   public panelStateThree = false;
 
+  public startDate: Date;
+  public endDate: Date;
+
+  public selected;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.startDate = new Date();
+    this.endDate = new Date();
+
+    this.endDate.setDate(this.endDate.getDate() + 7);
+
+    this.selected = {
+      startDate: this.startDate,
+      endDate: this.endDate
+    };
   }
 
 }
