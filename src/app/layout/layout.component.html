@@ -1,1 +1,83 @@
-<p>layout works!</p>
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelStateOne = true" (closed)="panelStateOne = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Panel 1
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <div class="form-group">
+          <label>Input 1</label>
+          <input class="form-control" />
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="form-group">
+          <label>Input 2</label>
+          <input class="form-control" />
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="form-group">
+          <label>Input 3</label>
+          <input class="form-control" />
+        </div>
+      </div>
+    </div>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelStateTwo = true" (closed)="panelStateTwo = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Panel 2
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <div class="form-group">
+          <label>Input 1</label>
+          <input class="form-control"/>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="form-group">
+          <label>Input 2</label>
+          <input class="form-control" />
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="form-group">
+          <label>Input 3</label>
+          <input class="form-control" />
+        </div>
+      </div>
+    </div>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelStateThree = true" (closed)="panelStateThree = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Panel 3
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <div class="form-group">
+          <label>Input 1</label>
+          <input class="form-control" />
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="form-group">
+          <label>Input 2</label>
+          <input class="form-control" />
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="form-group">
+          <label>Input 3</label>
+          <input class="form-control" />
+        </div>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
+  public panelStateOne = false;
+  public panelStateTwo = false;
+  public panelStateThree = false;
+
   constructor() { }
 
   ngOnInit(): void {
